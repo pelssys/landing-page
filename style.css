@@ -7,7 +7,8 @@ body{
 .wrap{
     display: flex;
     flex-direction: column;
-    width: 2250px;
+    width: 1600px;
+    height:auto;
     font-family: Roboto, Arial, sans-serif;
 }
 
@@ -18,7 +19,7 @@ body{
 .footer{
     display: flex;
     padding: 0 250px;
-    flex:auto;
+    flex-grow:1;
     justify-content: center;
 }
 
@@ -50,12 +51,15 @@ body{
     text-decoration: none;
     font-size: 18px;
     color: #E5E7EB;
+    font-weight: 100;
 }
 
 .hero-main{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 100px 0;
+    gap: 30px;
+
 }
 
 .hero-title{
@@ -66,6 +70,19 @@ body{
 .hero-text{
     font-size: 18px;
     color: #E5E7EB;
+    font-weight: 100;
+}
+
+.hero-main .fit-picture{
+    width:560px;
+    aspect-ratio: 2.35/1;
+}
+
+.hero-main .img-wrapper{
+    flex-shrink: 0;
+    width: 560px; /*Same width as .hero-main .fit-picture*/
+    aspect-ratio: 2.35/1;
+    padding:0;
 }
 
 .middle-one{
@@ -74,42 +91,111 @@ body{
    align-items: center;
 }
 
-.images{
-    display: flex;
+.info-header{
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    padding: 60px 0;
 }
 
-.cat-wrapper{
+.images{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.middle-one .img-wrapper{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 200px;
+}
+
+.middle-one .fit-picture{
+    height:200px;
+    width: auto;
+    border-radius: 30px;
+}
+
+.middle-one .subtext{
+    flex:1;
+    flex-wrap: wrap;
+    padding: 8px;
+    font-size: 18px;
+    color: #888;
+    text-align: center;
 }
 
 .middle-two{
     background-color: #E5E7EB;
+    flex-direction: column;
+    padding: 150px;
 }
 
-.middle-three{
-    
+
+.blue-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #3882F6;
+    flex:1;
+    margin: 100px 0;
+    padding: 50px 150px;
+    border-radius: 10px;
+
 }
 
-.fit-picture{
-    width:670px;
-    aspect-ratio: 2.35/1;
+.blue-container .title{
+    font-size: 28px;
+    color: #F9FAF8;
+    font-weight: bold;
 }
 
-.hero-main .img-wrapper{
-    flex-shrink: 0;
-    margin: 0 0 0 30px;
-    height: auto;
-    width: 670px;
-    aspect-ratio: 2.35/1;
-    padding:0;
+.blue-container .text{
+    font-size: 18px;
+    font-weight: 100;
+    color: #E5E7EB;
 }
+
+
+.quote{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    color: #1F2937;
+    padding: 0 150px;
+}
+
+.author{
+    font-size: 28px;
+    font-weight: bold;
+    color: #1F2937;
+    padding: 0 150px;
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 button{
     background: #3882F6;
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 5px 20px;
+    padding: 5px 25px;
     margin: 0;
+}
+
+.blue-container button{
+    font-size: 18px;
+    align-self: center;
+    border: solid;
+    border-width: thin;
+    border-color: #F9FAF8;
+}
+
+.footer{
+    background-color: #1F2937;
+    color: #E5E7EB;
+    font-weight: 100;
+    padding: 30px 0;
 }
