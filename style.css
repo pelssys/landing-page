@@ -2,13 +2,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.wrap{
-    display: flex;
     flex-direction: column;
-    width: 1600px;
-    height:auto;
+    margin: 0;
     font-family: Roboto, Arial, sans-serif;
 }
 
@@ -19,7 +14,8 @@ body{
 .footer{
     display: flex;
     padding: 0 250px;
-    flex-grow:1;
+    margin: 0;
+    flex:auto;
     justify-content: center;
 }
 
